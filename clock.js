@@ -185,7 +185,10 @@ function alarmSet() {
         //comparing if yes alert will generated and alarm time will stop working
         if (alarmTime == currentTime) {
             alert("HEY TIME IS " + alarmTime );
-            turnButton.textContent = "TURN ON";
+            alarmValue.remove();
+            deleteButton.remove();
+            turnButton.remove();
+            line.remove();
             clearInterval(timer);
         }
     },1000);
