@@ -1,12 +1,13 @@
+/* setting background color */
 body{
     background-color: #207a50;
 }
+/* header */
 header{
-    
-    /* background-color: black; */
     height: 20%;
     display: flex;
 }
+/* webpage name */
 #heading-name{   
     font-size: 2rem;
     margin-top: 2%;
@@ -15,18 +16,21 @@ header{
 header span{
     color: white;
 }
+/* alarm image */
 #alarm-image img{
     color: white;
     height: 100%;
     width: 100%;
 }
+/* digital time styling */
 #digital-time{
     color: azure;
     font-size: 7rem;
     font-weight: 900;
     margin-left: 12%;
 }
-#main{
+/* main */
+main{
     width: 70%;
     min-height: 100vh;
     background-color: #d5dce6;
@@ -34,6 +38,7 @@ header span{
     display: flex;
     flex-direction: column;
 }
+/* styling set alarm box */
 #set-alarm{
     margin-top: 5%;
     width: 100vw;
@@ -48,18 +53,17 @@ header span{
 #set-alarm form input{
     width: 5.5%;
 }
-
 #set-alarm button{
     margin-left: 30%;
     width: 10%;
     height: 8%;
     font-size: 1.5rem;
 }
-
 .box-settings{
     height: 5%;
     width: 5%;
 }
+/* set alarm button */
 .submit-button{
     background-color: #207a50;
     border: none;
@@ -68,9 +72,11 @@ header span{
     height: 5%;
     margin-left: 5%;
 }
+/* hovering set alarm button */
 .submit-button:hover{
     opacity: 0.9;
 }
+/* styling all alarms display box */
 .all-alarms{
     margin-top: -50%;
     width: 80%;
@@ -81,11 +87,13 @@ header span{
     flex-direction: row;
     justify-content: space-between;
 }
+/* all alarm name */
 .alarm-name{
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 4%;
 }
+/* delete all button */
 #delete-all{
     background-color: #414d44;
     font-size: 1.5rem;
@@ -96,9 +104,9 @@ header span{
     opacity: 0.8;
     font-weight: 500;
 }
+/* display box */
 #print-box{
     margin-top: -1%;
     font-size: 1.5rem;
-    width: 100%;
-    
+    width: 100%;   
 }

@@ -1,34 +1,48 @@
 <html>
+    <!-- head -->
     <head>
         <title>ALARM CLOCK</title>
-        <script src="https://kit.fontawesome.com/2770690ce5.js" crossorigin="anonymous"></script>
+        <!-- linking CSS styling -->
         <link rel="stylesheet" href="clock.css">
     </head>
+
+    <!-- body -->
     <body>
         
+        <!-- header -->
         <header>
+            <!-- alarm image -->
             <div id="alarm-image">
                 <img src="alarm-image.png" alt="">
             </div>
+            <!-- webpage name -->
             <div id="heading-name">
                 <span>ALARM</span> <br> <span>CLOCK</span>
             </div>
+            <!-- digital time -->
             <div id="digital-time">
             </div>
         </header>
         
-        <div id="main">
+        <!-- main -->
+        <main>
+            <!-- getting alarm time and sending to alarmSet function-->
             <div id="set-alarm">
-                <form action="">
+                <!-- getting values -->
+                <form>
+                    <!-- Hour -->
                     <label for="hour">HOUR</label>
-                    <input type="number" min="0" max="12" name="hour" class="box-settings" placeholder="Enter here" id="hour" required>
+                    <input type="number" min="1" max="12" name="hour" class="box-settings" placeholder="Enter here" id="hour" required>
                     <span>:</span>
+                    <!-- Minute -->
                     <label for="min">MINUTES</label>
                     <input type="number" min="0" max="59"name="min" class="box-settings" placeholder="Enter here" id="min" required>
                     <span>:</span>
+                    <!-- Second -->
                     <label for="sec">SECONDS</label>
                     <input type="number" min="0" max="59"name="sec" class="box-settings" placeholder="Enter here" id="sec" required > 
                     <span>:</span>
+                    <!-- Period AM/PM -->
                     <label for="period">AM/PM</label>
                     <select name="period" id="period" class="box-settings" style="width: 7%;" required>
                         <option value="">AM/PM</option>
@@ -36,19 +50,25 @@
                         <option value="PM">PM</option>
                     </select>   
                 </form>
+                <!-- calling alarmSet function -->
                 <button type="submit" class="submit-button" id="submit-button" onClick="alarmSet()">SET ALARM</button>
             </div>
+            <!-- displaying all alarms -->
             <div class="all-alarms">
+                <!-- all alarm heading and delete all button  -->
                 <div class="all-alarms-header">
+                    <!-- all alarm heading -->
                     <div class="alarm-name">ALARMS</div>
+                    <!-- delete all button  -->
                     <div><button id="delete-all">DELETE ALL</button></div>
                 </div>
-                
+                <!-- all the alarms will be printed here -->
                 <div id="print-box">
                 </div>
             </div>     
-        </div>
+        </main>
         
+        <!-- accesing javascript -->
         <script type="text/javascript" src="clock.js"></script>
     </body>
 </html>
